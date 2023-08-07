@@ -19,7 +19,7 @@
             <li><a href="#">About</a></li>
             <li class="ctn"><a href="#">Contact</a></li>
         </ul>
-        
+
         <!-- Mobile MenuBtn -->
         <div class="menuBtn">
             <div></div>
@@ -37,6 +37,15 @@
             <a class="ctn" href="#"> Learn More</a>
        </div>
     </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menuBtn');
+        const navLinks = document.querySelector('.navLinks');
+
+        menuBtn.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobileMenu');
+        })
+    </script>
 
 </body>
 </html>
