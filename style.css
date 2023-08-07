@@ -191,6 +191,28 @@ p{
     width: 60%;
 }
 
+.image-gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.image-gallery img{
+    width: 40%;
+    padding: 5px;
+}
+
+/*footer*/
+footer{
+    background-color: #49497e;
+    padding: 1rem;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+}
 /*Components*/
 .line{
     height: 4px;
@@ -307,4 +329,30 @@ p{
     .exploreContent p{
         margin-bottom: 3rem;
     }
+
+    /*Tour*/
+    .tour{
+        width: 100%;
+    }
+    .tour .row{
+        flex-direction: column;
+    }
+    .row .col{
+        width: 100%;
+    }
+
+    .colText{
+        width: 100%;
+    }
+
+    .colImage .image-gallery{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .image-gallery img{
+        width: 100%;
+    }
 }
+
