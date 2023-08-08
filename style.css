@@ -12,7 +12,7 @@ body,html{
 
 section{ 
     width: 80%;
-    margin: 3rem auto;
+    margin: 2rem auto;
 }
 
 ul{ list-style: none;}
@@ -35,7 +35,7 @@ p{
 }
 
 
-/*Navegation Bar*/
+/*Navigation Bar*/
 .navBar{
     width: 100%;
     position: absolute;
@@ -54,7 +54,7 @@ p{
 }
 
 .logo{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #fff;
 }
 
@@ -67,13 +67,12 @@ p{
 }
 
 .navLinks li a:hover{
-    text-decoration: underline;
+    color: #fc036b;
 }
 
 .navLinks .ctn a:hover{
     color: #fc036b;
 }
-
 
 /*Hero Section*/
 .heroSection{
@@ -151,6 +150,7 @@ p{
 }
 
 .exploreContent p{
+    text-align: center;
     color: #fff;
     margin: 2rem 0 1.5rem;
 }
@@ -184,7 +184,7 @@ p{
 }
 
 .row .colText .line{
-    margin: .5rem 0;
+    margin: .5rem;
 }
 
 .row .colImage{
@@ -244,10 +244,12 @@ footer p{
 
 /*Mobile MenuBtn*/
 .menuBtn{
+    background-color: transparent;
+    border: none;
     position: absolute;
     top: 30px;
     right: 30px;
-    width: 2.5rem;
+    width: 2rem;
     display: none;
 }
 
@@ -257,6 +259,20 @@ footer p{
     background-color: #fff;
     margin: 5px 0;
     border-radius: 3px;
+    transition: all .5s;
+}
+
+.menuBtn.active div:nth-child(1){
+    transform: rotate(-45deg) translate(-5px, 4px);
+}
+
+.menuBtn.active div:nth-child(2){
+    opacity: 0;
+    width: 0;
+}
+
+.menuBtn.active div:nth-child(3){
+    transform: rotate(45deg) translate(-7px, -7px);
 }
 
 .menuBtn:hover{
@@ -264,7 +280,7 @@ footer p{
     scale: 1.1;
 }
 
-/* Mobile Responsivity*/
+/*Mobile Responsivity*/
 @media screen and (max-width: 858px) {
     /*Navigation Bar*/
     .logo{
@@ -303,20 +319,33 @@ footer p{
         margin-top: 0;
     }
 
-    /*Events*/
-    .event{
+    section{
         width: 100%;
     }
 
+    /*Hero Section*/
+    .heroSectionContent{
+        align-items: center;
+    }
+
+    /*Events*/
     .event .row{
         flex-direction: column;
     }
 
-    .row .col{
+    .event .row .col{
         margin: 2rem auto;
     }
 
-    .row .col img{
+    .event .row .col p{
+        margin-bottom: 2rem;
+    }
+    
+    .event .row .col h4{
+        font-size: 12pt;
+    }
+
+    .event .row .col img{
         max-width: 90%;
     }
 
@@ -324,6 +353,7 @@ footer p{
     .exploreContent{
         width: 100%;
         text-align: center;
+        padding: 0;
     }
 
     .exploreContent p{
@@ -331,23 +361,37 @@ footer p{
     }
 
     /*Tour*/
-    .tour{
-        width: 100%;
-    }
     .tour .row{
         flex-direction: column;
+        justify-content: center;
     }
-    .row .col{
+
+    .tour .row .col{
         width: 100%;
+        margin: 1rem auto;
     }
 
     .colText{
         width: 100%;
+        text-align: center;
     }
 
-    .colImage .image-gallery{
+    .row .colText .line{
+        margin: .5rem auto;
+    }
+
+    .colText p{
+        padding: 0;
+        width: 90%;
+    }
+
+    .row .colImage{
+        width: 100%;
+    }
+
+    .image-gallery{
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
@@ -356,3 +400,13 @@ footer p{
     }
 }
 
+/* Animation*/
+img{
+    transition: all .5s ease;
+}
+
+img:hover{
+   scale: 1.1;
+}
+
+/*Designed by Miguel Kambamba @2023*/

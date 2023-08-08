@@ -8,8 +8,7 @@
 </head>
 <body>
     
-    
-        
+    <!-- navigation bar -->
     <nav class="navBar">
         <h1 class="logo">ADVENTURE</h1>
         <ul class="navLinks">
@@ -21,7 +20,7 @@
         </ul>
 
         <!-- Mobile MenuBtn -->
-        <div class="menuBtn">
+        <div class="menuBtn" id="Btn">
             <div></div>
             <div></div>
             <div></div>
@@ -88,17 +87,19 @@
     </section>
 
     <footer>
-        <p>123 Fifth Avenue, NY 10160, New York, USA | Phone 800-123-456 | Email: contac@example.com</p>
+        <p>123 Fifth Avenue, NY 10160, New York, USA | Phone 800-123-456 | Email: contact@example.com</p>
         <p>Copyright © 2020 Outdoor Adventure</p>
     </footer>
 
 
     <script>
         const menuBtn = document.querySelector('.menuBtn');
+        const Btn = document.getElementById('Btn');
         const navLinks = document.querySelector('.navLinks');
 
         menuBtn.addEventListener('click',()=>{
             navLinks.classList.toggle('mobileMenu');
+            Btn.classList.toggle('active');
         })
     </script>
 
