@@ -219,6 +219,16 @@ footer p{
     text-align: center;
 }
 /*Components*/
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: #fc036b;;
+}
+
 .line{
     height: 4px;
     width: 10rem;
