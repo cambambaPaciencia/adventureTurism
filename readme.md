@@ -18,8 +18,4 @@ Este é um website de Turismo desenvolvido com _HTML_, _CSS_ e um pouco de _Java
 
 ### Versão Mobile
 
-![screenshot-01](./assets/layout/screenshot-01.png)
-![screenshot-02](./assets/layout/screenshot-02.png)
-![screenshot-03](./assets/layout/screenshot-03.png)
-![screenshot-04](./assets/layout/screenshot-04.png)
-![screenshot-05](./assets/layout/screenshot-05.png)
+![screenshot-01](./assets/img/screenshot-01.png)
